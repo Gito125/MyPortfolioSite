@@ -9,10 +9,10 @@ const Hero = () => {
       <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end justify-center items-center">
         <div
           data-aos="slide-left"
-          data-aos-delay="1200"
+          data-aos-delay="1000"
           className="absolute h-full md:w-4/12 w-8/12 top-0 right-0 bg-primaryLinear bottom-0 -z-10"
         >
-          <h1 className="rotate-90 absolute top-[30%] right-[-15%] text-[#EAF2FA]">
+          <h1 className="rotate-90 absolute top-[18%] right-[-50%] sm:top-[35%] sm:right-[-15%] text-[#EAF2FA]">
             {hero.firstName}{" "}
             <span className="text-dark_primary">{hero.LastName}</span>
           </h1>
@@ -32,7 +32,7 @@ const Hero = () => {
               <div
                 key={i}
                 data-aos="fade-down"
-                data-aos-delay={i * 300}
+                data-aos-delay={i * 150}
                 className={`flex items-center w-80 gap-5
             ${i === 1 && " flex-row-reverse text-right"}  `}
               >
@@ -48,8 +48,8 @@ const Hero = () => {
           <img
             src={hero.image}
             data-aos="slide-up"
-            alt="..."
-            className="h-full object-cover"
+            alt="Image of Gideon..."
+            className="h-full object-cover relative top-10"
           />
         </div>
       </div>

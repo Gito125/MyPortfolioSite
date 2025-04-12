@@ -12,7 +12,7 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    maxWidth: "23rem",
+    maxWidth: "24rem",
     width: "90%",
   },
   overlay: {
@@ -47,17 +47,13 @@ const Skills = () => {
           <h6>{selectSkill?.name}</h6>
         </div>
         <br />
-        <ul className="list-decimal px-4 font-Poppins sm:text-sm text-xs !leading-7">
-          <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
-          <li>Lorem ipsum dolor sit, ame.</li>
-          <li>Lorem ipsum dolor sit, amet consectetur</li>
-          <li>
-            Lorem ipsum dolor sit, amet dolor sit, amet consectetur adipisicing.
-          </li>
-          <li>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad est
-            beatae quos rem.
-          </li>
+        <ul className="list-decimal px-4 sm:text-sm text-xs !leading-7">
+          {selectSkill?.details.map((detail, i) => (
+            <li key={i} className="flex gap-2 items-center">
+              <span className="text-primary">{i + 1}.</span>
+              {detail}
+            </li>
+          ))}
         </ul>
         <br />
         <div className="flex justify-end">
@@ -79,9 +75,13 @@ const Skills = () => {
         <div className="flex flex-wrap gap-4 justify-center">
           {skills.skills_content.map((skill, i) => (
             <div
+              onClick={() => {
+                setSelectSkill(skill);
+                openModal();
+              }}
               key={i}
               data-aos="fade-up"
-              data-aos-delay={i * 400}
+              data-aos-delay={i * 150}
               className="bg-white sm:cursor-pointer 
                relative group w-full flex items-center
                 gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200"
@@ -89,7 +89,7 @@ const Skills = () => {
               <div>
                 <img
                   src={skill.logo}
-                  alt="..."
+                  alt={skill.name}
                   className="w-10 group-hover:scale-125 duration-200"
                 />
               </div>
@@ -97,10 +97,6 @@ const Skills = () => {
                 <h6>{skill.name}</h6>
                 <p className="italic">{skill.para}</p>
                 <div
-                  onClick={() => {
-                    setSelectSkill(skill);
-                    openModal();
-                  }}
                   className="text-xl absolute top-3 right-3"
                 >
                   {createElement(skills.icon)}

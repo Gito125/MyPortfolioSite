@@ -11,6 +11,7 @@ import { useEffect } from "react";
 // Animation package
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Footer from "./components/Footer";
 
 const App = () => {
   useEffect(() => {
@@ -21,7 +22,7 @@ const App = () => {
     });
   }, []);
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <Navbar />
       <Hero />
       <Skills />
@@ -30,10 +31,7 @@ const App = () => {
       <Testimonials />
       <Hireme />
       <Contact />
-      <footer className="p-3 text-center">
-        <h6 className="mb-3">OGWANG Gift Gideon</h6>
-        <p>© All CopyRights Reserved 2024</p>
-      </footer>
+      <Footer />
     </div>
   );
 };

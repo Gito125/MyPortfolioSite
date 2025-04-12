@@ -16,6 +16,9 @@ import services_logo3 from "./assets/images/Services/logo3.png";
 import project1 from "./assets/images/projects/img1.png";
 import project2 from "./assets/images/projects/img2.png";
 import project3 from "./assets/images/projects/img3.png";
+import project4 from "./assets/images/projects/img4.png";
+import project5 from "./assets/images/projects/img5.png";
+import project6 from "./assets/images/projects/img6.png";
 import person_project from "./assets/images/projects/person.png";
 
 import avatar1 from "./assets/images/Testimonials/avatar1.png";
@@ -82,81 +85,155 @@ export const content = {
     skills_content: [
       {
         name: "React js",
-        para: "Makes building frontend applications look amazing!",
+        para: "Sleek frontend development ⚛️",
+        details: [
+          "⚡ Your users get lightning-fast performance.",
+          "🎯 Clean, modern designs that boost trust.",
+          "📱 Apps look great on mobile and desktop.",
+          "🧠 Easy to scale and maintain as you grow.",
+          "🤩 Better UI = happier, more loyal customers.",
+        ],
         logo: reactjs,
       },
       {
         name: "Vite",
-        para: "Speeds up development environment. Your project will be done in 2/3 of the time.",
+        para: "Super-fast project setup 🚀",
+        details: [
+          "⏱️ Your project gets delivered faster.",
+          "🔄 Real-time updates speed up feedback cycles.",
+          "🧠 Saves you time = saves you money.",
+          "🚀 Boosts developer productivity for quicker changes.",
+          "🎉 Minimal setup, so we focus on what matters: your product.",
+        ],
         logo: vite,
       },
       {
         name: "Node js",
-        para: "Great for building backend application systems.",
+        para: "Backend that scales 🌐",
+        details: [
+          "💡 Your app runs smoothly, even with many users.",
+          "⚡ Real-time features (chat, updates) work instantly.",
+          "🛠️ Scalable backend means you're ready for growth.",
+          "🔄 One language = faster development = lower cost.",
+          "🔒 Secure and efficient = peace of mind for you.",
+        ],
         logo: nodejs,
       },
       {
         name: "Python",
-        para: "Automate tasks, analyze data, develop web applications.",
+        para: "Versatile coding tool 🐍",
+        details: [
+          "🤖 Tedious tasks get automated — saving you hours.",
+          "📈 Data becomes insights — helping smarter decisions.",
+          "⚡ Quick to build MVPs and test ideas.",
+          "💼 Ideal for both simple and complex business needs.",
+          "🧠 Clean, readable code keeps future costs low.",
+        ],
         logo: python,
       },
       {
         name: "Adobe Photoshop",
-        para: "Making interesting picture edits.",
+        para: "Creative image edits 🎨",
+        details: [
+          "📸 Your brand visuals stand out and attract attention.",
+          "✨ Boosts engagement with stunning social media content.",
+          "🧼 Professional look builds trust with customers.",
+          "🎯 Tailored visuals to match your brand identity.",
+          "🚀 Graphics that convert views into action.",
+        ],
         logo: ps,
       },
       {
         name: "Adobe Illustrator",
-        para: "Designing graphics for your brand.",
+        para: "Scalable vector graphics 🖌️",
+        details: [
+          "📐 Crisp, high-quality logos that scale perfectly.",
+          "🧠 Visual consistency across print and digital platforms.",
+          "🎨 Custom icons and designs that reflect your identity.",
+          "💼 Polished branding that makes you look legit.",
+          "🚀 Helps your business leave a lasting impression.",
+        ],
         logo: adobe_ai,
       },
       {
         name: "Django",
-        para: "Lightweight and powerful for backend development.",
+        para: "Powerful backend framework 🦾",
+        details: [
+          "⚡ Faster to build = quicker time-to-market for you.",
+          "🔒 Secure by design — your users’ data is safe.",
+          "🧠 Includes admin panel to save on dev costs.",
+          "📈 Easy to scale as your business expands.",
+          "💼 Built to handle complex needs without complexity.",
+        ],
         logo: python,
       },
       {
         name: "Git",
-        para: "Manage all projects effectively.",
+        para: "Project version control 🧠",
+        details: [
+          "🛡️ Your work is backed up and protected always.",
+          "🔍 Full history of changes = easy to manage progress.",
+          "🤝 Makes team collaboration smoother and faster.",
+          "🔁 Rollbacks prevent costly mistakes.",
+          "🧰 Keeps everything organized, even as projects grow.",
+        ],
         logo: git,
       },
-    ],
+    ],    
     icon: MdArrowForward,
   },
   services: [
     {
       title: "Web Development",
-      para: "We build sleek, high-performing websites that don’t just look good—they work hard too. From responsive design to blazing-fast performance, your online presence is in expert hands.",
+      para: "💻 We build sleek, high-performing websites that don’t just look good—they work hard too. From responsive design to blazing-fast performance, your online presence is in expert hands.",
       logo: services_logo1,
     },
     {
       title: "UI / UX Designing",
-      para: "Design isn’t just how it looks—it’s how it *feels*. We craft intuitive user experiences that your audience will actually enjoy using. Eye candy + brain-friendly = design done right.",
+      para: "🎨 Design isn’t just how it looks—it’s how it *feels*. We craft intuitive user experiences that your audience will actually enjoy using. Eye candy + brain-friendly = design done right.",
       logo: services_logo2,
     },
     {
-      title: "Photoshop Editing",
-      para: "From jaw-dropping photo transformations to pixel-perfect touch-ups, we breathe life into every image. Whether it’s for social media or print, your visuals will pop like never before.",
+      title: "Graphics Editing",
+      para: "🖼️ We enhance your visuals to speak louder than words. From polished diagrams to scroll-stopping content, we tailor every graphic to match your brand and wow your audience—online or in print.",
       logo: services_logo3,
     },
-  ],  
+  ],
   Projects: {
     title: "Projects",
-    subtitle: "MY CREATION",
+    subtitle: "MY CREATIONS",
     image: person_project,
     project_content: [
       {
-        title: "Gym Website",
+        title: "Sunny Side Creative Agency",
         image: project1,
+        link: 'https://gito125.github.io/Sunnyside-Agenccy-Website/'
       },
       {
-        title: "Social Media web",
+        title: "Faijoma Komagum Investments Ltd business profile",
         image: project2,
+        link: "https://drive.google.com/file/d/1S-ArboHrpfZP3KvDSH6otkll7eTLipDT/view?usp=sharing"
       },
       {
-        title: "Creative Website",
+        title: "Insure Landing Page",
         image: project3,
+        link: "https://gito125.github.io/Insure-landing-page/index.html"
       },
+      {
+        title: 'Advice Generator App',
+        image: project4,
+        link: "https://advice-app-generator.web.app/"
+      },
+      {
+        title: 'Clipboard Master',
+        image: project5,
+        link: "https://gito125.github.io/clipboard-landing-page-master/"
+      },
+      {
+        title: 'Potra Security Services Limited',
+        image: project6,
+        link: "https://drive.google.com/file/d/1nGX0AwzsyViBbW39zIJZNwe0a8eSNUhU/view?usp=sharing"
+      }
     ],
   },
   Testimonials: {
@@ -219,6 +296,7 @@ export const content = {
     ],
   },
   Footer: {
-    text: "All © Copy Right Reserved 2025",
-  },
+    name: 'OGWANG Gift Gideon',
+    text: "© Copy Right Reserved 2025",
+  }
 };

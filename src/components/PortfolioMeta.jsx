@@ -18,14 +18,14 @@ function PortfolioMeta() {
       <meta property="og:title" content="Gideon Prime | Full-Stack Developer & Future Engineer" />
       <meta property="og:description" content="Explore the projects, skills, and tech stack of Gideon — a rising star in computer science and engineering." />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://your-portfolio-url.com" />
-      <meta property="og:image" content="https://your-portfolio-url.com/preview_image.jpeg" />
+      <meta property="og:url" content="https://iamgideon.vercel.app/" />
+      <meta property="og:image" content="https://iamgideon.vercel.app/preview_image.jpeg" />
 
       {/* Twitter Cards */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Gideon Prime | Software Engineer & Builder" />
       <meta name="twitter:description" content="Gideon is a bold, driven developer pushing boundaries in tech. Check out his latest work." />
-      <meta name="twitter:image" content="https://your-portfolio-url.com/preview-image.png" />
+      <meta name="twitter:image" content="https://iamgideon.vercel.app/preview_image.jpeg" />
     </Helmet>
   );
 }

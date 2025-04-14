@@ -2,6 +2,7 @@ import { createElement, useRef, useState } from "react";
 import { content } from "../Content";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
+import BouncingArrow from "./BouncingArrow";
 
 const Contact = () => {
   const { Contact } = content;
@@ -145,22 +146,27 @@ const Contact = () => {
         </form>
 
 
-          {/* Social Media Icons */}
-          <div className="flex-1 flex flex-col gap-5">
-            {Contact.social_media.map((content, i) => (
-              <div
-                key={i}
-                data-aos="fade-down"
-                data-aos-delay={i * 430}
-                className="flex items-center gap-2"
-              >
-                <h4 className="text-white">{createElement(content.icon)}</h4>
-                <a className="" href={content.link} target="_blank">
-                  {content.text}
-                </a>
-              </div>
-            ))}
-          </div>
+        {/* Social Media Icons */}
+        <div className="flex-1 flex flex-col gap-5 relative">
+          {Contact.social_media.map((content, i) => (
+            <div
+              key={i}
+              data-aos="fade-down"
+              data-aos-delay={i * 430}
+              className="flex items-center gap-2"
+            >
+              <h4 className="text-white">{createElement(content.icon)}</h4>
+              <a className="" href={content.link} target="_blank">
+                {content.text}
+              </a>
+            </div>
+          ))}
+
+          {/* Bouncing Arrow Animation */}
+          <BouncingArrow />
+
+        </div>
+
         </div>
       </div>
     </section>

@@ -23,7 +23,7 @@ const App = () => {
     Aos.init({
       duration: 500,
       offset: 100,
-      disable: "mobile",
+      // disable: "mobile",
     });
   }, []);
   return (

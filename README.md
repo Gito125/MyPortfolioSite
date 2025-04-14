@@ -1,4 +1,6 @@
 # React Portfolio
+'./public/preview_image.jpeg
+
 ### Vite + React + tailwind
 
 ```bash 

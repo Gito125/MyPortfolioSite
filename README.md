@@ -14,3 +14,4 @@ pnpm dev
 + [react modal](https://www.npmjs.com/package/react-modal)
 + [react-hot-toast](https://react-hot-toast.com/docs)
 + [react icons](https://react-icons.github.io/react-icons/)
++ [react helmet](https://www.npmjs.com/package/react-helmet)

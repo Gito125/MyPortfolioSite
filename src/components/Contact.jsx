@@ -24,7 +24,7 @@ const Contact = () => {
           // Clear all input field values
           form.current.reset();
           // Success toast message
-          toast.success("Email send Successfully");
+          toast.success("Email sent Successfully 😎");
           console.log("Email sent successfully to client");
         },
         (error) => {
@@ -44,11 +44,11 @@ const Contact = () => {
           console.log(result.text);
           // Clear all input field values
           form.current.reset();
-          console.log("Email sent successfully to Developer");
+          console.log("Email sent successfully to Developer 💪🏾😎");
         },
         (error) => {
           console.log(error.text);
-          console.log("Error sending email to Developer");
+          console.log("Error sending email to Developer 🥲😥");
         }
       );
 

@@ -1,5 +1,5 @@
 # React Portfolio
-'./public/preview_image.jpeg
+![Portfolio Preview](./public/preview_image.jpeg)
 
 ### Vite + React + tailwind
 

@@ -9,7 +9,6 @@ import Testimonials from "./components/Testimonials";
 import Hireme from "./components/Hireme";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import PortfolioMeta from "./components/PortfolioMeta";
 
 // Vercel Analytics
 import { Analytics } from "@vercel/analytics/react"
@@ -30,9 +29,6 @@ const App = () => {
     <div className="overflow-hidden">
       {/* Vercel Analytics */}
       <Analytics />
-
-      {/* Meta Tags */}
-      <PortfolioMeta />
 
       {/* Website Components */}
       <Navbar />

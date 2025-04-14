@@ -1,4 +1,4 @@
-# React Portfolio
+# Gideon Prime Portfolio
 ![Portfolio Preview](./public/preview_image.jpeg)
 
 ### Vite + React + tailwind

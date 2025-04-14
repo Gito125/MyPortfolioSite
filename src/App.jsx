@@ -11,6 +11,9 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import PortfolioMeta from "./components/PortfolioMeta";
 
+// Vercel Analytics
+import { Analytics } from "@vercel/analytics/react"
+
 // Animation package
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -25,6 +28,9 @@ const App = () => {
   }, []);
   return (
     <div className="overflow-hidden">
+      {/* Vercel Analytics */}
+      <Analytics />
+
       {/* Meta Tags */}
       <PortfolioMeta />
 

@@ -25,11 +25,13 @@ const Contact = () => {
           form.current.reset();
           // Success toast message
           toast.success("Email send Successfully");
+          console.log("Email sent successfully to client");
         },
         (error) => {
           console.log(error.text);
           // Error toast message
           toast.error(error.text);
+          console.log("Error sending email to client");
         }
       );
 

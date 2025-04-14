@@ -24,7 +24,6 @@ import person_project from "./assets/images/projects/person.png";
 import avatar1 from "./assets/images/Testimonials/avatar1.png";
 import avatar2 from "./assets/images/Testimonials/avatar2.png";
 import avatar3 from "./assets/images/Testimonials/avatar3.png";
-import avatar4 from "./assets/images/Testimonials/avatar4.png";
 
 import Hireme_person from "./assets/images/Hireme/person.png";
 import Hireme_person2 from "./assets/images/Hireme/person2.png";
@@ -65,7 +64,7 @@ export const content = {
   hero: {
     title: "Web Developer",
     firstName: "OGWANG",
-    LastName: "GIDEON",
+    LastName: "GIFT GIDEON",
     btnText: "Contact Me",
     image: Hero_person,
     hero_content: [
@@ -242,27 +241,24 @@ export const content = {
     testimonials_content: [
       {
         review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
+          "“Gideon has helped to promote our company by enabling us reach more clients effectively and efficienly”",
         img: avatar1,
-        name: "JOHN DOE",
+        name: "ALOBO DAPHINE",
+        role: "Cheif Administrator"
       },
       {
         review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
+          "“Mr Ogwang is one of a kind. He can turn a simple idea into something truly amazing and profitable to the company in the long term”",
         img: avatar2,
-        name: "Tom Alex",
+        name: "MILTON EBONG",
+        role: "Cheif Executive Officer"
       },
       {
         review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
+          "“Humble and diligent on completing his tasks on time. Truly, he's someone worht working with”",
         img: avatar3,
-        name: "Johnny",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar4,
-        name: "ROBBIN",
+        name: " AKENA RICHARD",
+        role: "Director"
       },
     ],
   },

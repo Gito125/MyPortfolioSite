@@ -1,4 +1,5 @@
 // import components
+import { useEffect } from "react";
 import Hero from "./components/Hero";
 import Navbar from "./Layouts/Navbar";
 import Skills from "./components/Skills";
@@ -7,11 +8,12 @@ import Projects from "./components/Projects";
 import Testimonials from "./components/Testimonials";
 import Hireme from "./components/Hireme";
 import Contact from "./components/Contact";
-import { useEffect } from "react";
+import Footer from "./components/Footer";
+import PortfolioMeta from "./components/PortfolioMeta";
+
 // Animation package
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Footer from "./components/Footer";
 
 const App = () => {
   useEffect(() => {
@@ -23,6 +25,10 @@ const App = () => {
   }, []);
   return (
     <div className="overflow-hidden">
+      {/* Meta Tags */}
+      <PortfolioMeta />
+
+      {/* Website Components */}
       <Navbar />
       <Hero />
       <Skills />

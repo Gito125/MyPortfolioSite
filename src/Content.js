@@ -280,9 +280,9 @@ export const content = {
         link: "mailto:iamgideon125@gmail.com",
       },
       {
-        text: "+256 709 906163",
+        text: "+256709906163",
         icon: MdCall,
-        link: "https://wa.me/1234567890",
+        link: "tel:+256709906163",
       },
       {
         text: "Chat on Whatsapp",

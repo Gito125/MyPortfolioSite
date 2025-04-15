@@ -16,6 +16,7 @@ import { Analytics } from "@vercel/analytics/react"
 // Animation package
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useState } from "react";
 
 const App = () => {
   useEffect(() => {
@@ -25,6 +26,12 @@ const App = () => {
       // disable: "mobile",
     });
   }, []);
+
+  // Adding Theme
+  const [theme, setTheme] = useState(
+    localStorage.getItem('theme') || 'light'
+  )
+
   return (
     <div className="overflow-hidden">
       {/* Vercel Analytics */}

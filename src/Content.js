@@ -181,23 +181,27 @@ export const content = {
     ],    
     icon: MdArrowForward,
   },
-  services: [
-    {
-      title: "Web Development",
-      para: "💻 We build sleek, high-performing websites that don’t just look good—they work hard too. From responsive design to blazing-fast performance, your online presence is in expert hands.",
-      logo: services_logo1,
-    },
-    {
-      title: "UI / UX Designing",
-      para: "🎨 Design isn’t just how it looks—it’s how it *feels*. We craft intuitive user experiences that your audience will actually enjoy using. Eye candy + brain-friendly = design done right.",
-      logo: services_logo2,
-    },
-    {
-      title: "Graphics Editing",
-      para: "🖼️ We enhance your visuals to speak louder than words. From polished diagrams to scroll-stopping content, we tailor every graphic to match your brand and wow your audience—online or in print.",
-      logo: services_logo3,
-    },
-  ],
+  services: {
+    title: 'My Services',
+    subtitle: 'WHAT I OFFER',
+    content: [
+      {
+        title: "Web Development",
+        para: "💻 We build sleek, high-performing websites that don’t just look good—they work hard too. From responsive design to blazing-fast performance, your online presence is in expert hands.",
+        logo: services_logo1,
+      },
+      {
+        title: "UI / UX Designing",
+        para: "🎨 Design isn’t just how it looks—it’s how it *feels*. We craft intuitive user experiences that your audience will actually enjoy using. Eye candy + brain-friendly = design done right.",
+        logo: services_logo2,
+      },
+      {
+        title: "Graphics Editing",
+        para: "🖼️ We enhance your visuals to speak louder than words. From polished diagrams to scroll-stopping content, we tailor every graphic to match your brand and wow your audience—online or in print.",
+        logo: services_logo3,
+      },
+    ]
+  },
   Projects: {
     title: "Projects",
     subtitle: "MY CREATIONS",

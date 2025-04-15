@@ -4,7 +4,7 @@ import {content} from '../Content'
 const Footer = () => {
     const footer = content.Footer
   return (
-    <footer className="p-3 text-center">
+    <footer className="p-3 text-center dark:bg-[#b3b3b3]">
       <h6 className="mb-3">{footer.name}</h6>
       <p>{footer.text}</p>
     </footer>

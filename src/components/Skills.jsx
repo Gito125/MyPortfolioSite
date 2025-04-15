@@ -35,7 +35,7 @@ const Skills = () => {
   }
 
   return (
-    <section className="min-h-fit bg-bg_light_primary" id="skills">
+    <section className="min-h-fit bg-bg_light_primary dark:bg-[#b3b3b3]" id="skills">
       {/* modal */}
       <Modal
         isOpen={modalIsOpen}
@@ -43,7 +43,7 @@ const Skills = () => {
         style={customStyles}
       >
         <div className="flex items-center gap-2">
-          <img className="h-10" src={selectSkill?.logo} alt="..." />
+          <img className="h-10" src={selectSkill?.logo} alt={selectSkill?.name} />
           <h6>{selectSkill?.name}</h6>
         </div>
         <br />
@@ -64,11 +64,11 @@ const Skills = () => {
       </Modal>
 
       {/* content */}
-      <div className="md:container px-5  py-14">
+      <div className="md:container px-5 py-14">
         <h2 className="title" data-aos="fade-down">
           {skills.title}
         </h2>
-        <h4 className="subtitle" data-aos="fade-down">
+        <h4 className="subtitle dark:text-dark_primary/80" data-aos="fade-down">
           {skills.subtitle}
         </h4>
         <br />
@@ -82,9 +82,9 @@ const Skills = () => {
               key={i}
               data-aos="fade-up"
               data-aos-delay={i * 150}
-              className="bg-white sm:cursor-pointer 
+              className="bg-white dark:bg-dark_primary shadow-lg sm:cursor-pointer 
                relative group w-full flex items-center
-                gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200"
+                gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200 dark:border-none"
             >
               <div>
                 <img
@@ -94,10 +94,10 @@ const Skills = () => {
                 />
               </div>
               <div>
-                <h6>{skill.name}</h6>
-                <p className="italic">{skill.para}</p>
+                <h6 className="dark:text-bg_light_primary">{skill.name}</h6>
+                <p className="italic dark:text-bg_light_primary">{skill.para}</p>
                 <div
-                  className="text-xl absolute top-3 right-3"
+                  className="text-xl absolute top-3 right-3 dark:text-bg_light_primary"
                 >
                   {createElement(skills.icon)}
                 </div>

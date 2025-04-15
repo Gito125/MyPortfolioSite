@@ -11,26 +11,21 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 // Vercel Analytics
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 // Animation package
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useState } from "react";
+import ThemeToggleButton from "./components/ThemeToggleButton";
 
 const App = () => {
   useEffect(() => {
     Aos.init({
-      duration: 1000,
+      duration: 800,
       offset: 100,
       // disable: "mobile",
     });
   }, []);
-
-  // Adding Theme
-  const [theme, setTheme] = useState(
-    localStorage.getItem('theme') || 'light'
-  )
 
   return (
     <div className="overflow-hidden">
@@ -47,6 +42,9 @@ const App = () => {
       <Hireme />
       <Contact />
       <Footer />
+
+      {/* Theme Button */}
+      <ThemeToggleButton />
     </div>
   );
 };

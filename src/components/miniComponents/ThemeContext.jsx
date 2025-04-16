@@ -10,7 +10,7 @@ export const ThemeProvider = ({ children }) => {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const defaultTheme = storedTheme || (prefersDark ? 'dark' : 'light');
     setTheme(defaultTheme);
-    document.documentElement.classList.toggle('dark', defaultTheme === 'dark');
+    document.documentElement.classList.toggle('light', defaultTheme === 'light');
   }, []);
 
   const toggleTheme = () => {

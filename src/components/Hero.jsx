@@ -22,7 +22,7 @@ const Hero = () => {
 
         {/* first col */}
         <div className="pb-16 px-6 pt-5 relative" data-aos="fade-down">
-          <h2 className="dark:text-bg_light_primary h-28  sm:absolute mt-10 sm:-top-12 sm:-left-16 md:-top-10 md:-left-12 p-1 transition-colors duration-500">
+          <h2 className="dark:text-bg_light_primary h-28  sm:absolute mt-10 sm:-top-20 sm:-left-16 p-1 transition-colors duration-500">
             <CustomTypewriter 
               words={[hero.title]}
               speed={100}
@@ -32,11 +32,10 @@ const Hero = () => {
               delayBeforeStart={2000}
             />
           </h2>
-          {/* <h2 className="dark:text-bg_light_primary">{hero.title}</h2> */}
           <br />
           <div className="flex justify-end">
             <a href="#contact">
-              <button className="btn animate-bounce shadow-lg hover:shadow-xl hover:bg-orange-500 hover:text-bg_light_primary dark:text-bg_light_primary dark:border-bg_light_primary">{hero.btnText}</button>
+              <button className="btn mr-1 animate-bounce shadow-lg hover:shadow-xl hover:bg-orange-500 hover:text-bg_light_primary dark:text-bg_light_primary dark:border-bg_light_primary">{hero.btnText}</button>
             </a>
           </div>
           <div className="flex flex-col gap-10 mt-10">

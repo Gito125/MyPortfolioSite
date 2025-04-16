@@ -2,7 +2,8 @@ import { createElement, useRef, useState } from "react";
 import { content } from "../Content";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
-import BouncingArrow from "./BouncingArrow";
+import BouncingArrow from "./miniComponents/BouncingArrow";
+import CustomTypewriter from "./miniComponents/CustomeTypeWriter";
 
 const Contact = () => {
   const { Contact } = content;
@@ -60,7 +61,13 @@ const Contact = () => {
       <Toaster />
       <div className="md:container px-5 py-14">
         <h2 className="title !text-white" data-aos="fade-down">
-          {Contact.title}
+          <CustomTypewriter
+            words={[Contact.title]}
+            speed={100}
+            pause={1000}
+            loop
+            cursorChar='⚡'
+          />
         </h2>
         <h4 className="subtitle" data-aos="fade-down">
           {Contact.subtitle}

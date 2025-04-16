@@ -1,4 +1,5 @@
 import { content } from "../Content";
+import CustomTypewriter from "./miniComponents/CustomeTypeWriter";
 
 const Services = () => {
   const { services } = content;
@@ -6,7 +7,13 @@ const Services = () => {
     <section id="services">
       <div className="md:container px-5 py-14">
         <h2 className="title dark:text-bg_light_primary" data-aos="fade-down">
-          {services.title}
+          <CustomTypewriter
+            words={[services.title]}
+            speed={100}
+            pause={1000}
+            loop
+            cursorChar='⚡'
+            />
         </h2>
         <h4 className="subtitle" data-aos="fade-down">
           {services.subtitle}

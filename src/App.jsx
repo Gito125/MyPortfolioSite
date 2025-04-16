@@ -16,7 +16,8 @@ import { Analytics } from "@vercel/analytics/react";
 // Animation package
 import Aos from "aos";
 import "aos/dist/aos.css";
-import ThemeToggleButton from "./components/ThemeToggleButton";
+import ThemeToggleButton from "./components/miniComponents/ThemeToggleButton";
+import useTypingTitle from "./components/customHook/useTypingTitle";
 
 const App = () => {
   useEffect(() => {
@@ -26,6 +27,20 @@ const App = () => {
       // disable: "mobile",
     });
   }, []);
+
+  // For animations in the document title
+  useTypingTitle({
+    titles: [
+      "Gideon Prime | Full-Stack Wizard 💻",
+      "⚡Crafting Web Magic... 🪄",
+      "Let’s Build the Future 🛠️",
+      "Available for Missions 🛰️",
+    ],
+    typingSpeed: 100,
+    deletingSpeed: 50,
+    delayBetween: 1500,
+    inactiveTitle: "👋 Hey! You left me here 😢"
+  });
 
   return (
     <div className="overflow-hidden">

@@ -1,7 +1,6 @@
 // import content
 import { content } from "../Content";
-import ThemeToggleButton from "./ThemeToggleButton";
-
+import CustomTypewriter from "./miniComponents/CustomeTypeWriter";
 const Hero = () => {
   const { hero } = content;
 
@@ -22,12 +21,22 @@ const Hero = () => {
         </div>
 
         {/* first col */}
-        <div className="pb-16 px-6 pt-5" data-aos="fade-down">
-          <h2 className="dark:text-bg_light_primary">{hero.title}</h2>
+        <div className="pb-16 px-6 pt-5 relative" data-aos="fade-down">
+          <h2 className="dark:text-bg_light_primary h-24 absolute -top-12 -left-12 transition-colors duration-500">
+            <CustomTypewriter 
+              words={[hero.title]}
+              speed={100}
+              pause
+              loop
+              cursorChar='⚡'
+              delayBeforeStart={2000}
+            />
+          </h2>
+          {/* <h2 className="dark:text-bg_light_primary">{hero.title}</h2> */}
           <br />
           <div className="flex justify-end">
             <a href="#contact">
-              <button className="btn animate-bounce dark:text-bg_light_primary dark:border-bg_light_primary">{hero.btnText}</button>
+              <button className="btn animate-bounce shadow-lg hover:shadow-xl hover:bg-orange-500 hover:text-bg_light_primary dark:text-bg_light_primary dark:border-bg_light_primary">{hero.btnText}</button>
             </a>
           </div>
           <div className="flex flex-col gap-10 mt-10">
@@ -47,7 +56,7 @@ const Hero = () => {
         </div>
 
         {/* sec col */}
-        <div className="md:h-[37rem] h-96">
+        <div className="md:h-[37rem] h-96 relative">
           <img
             src={hero.image}
             data-aos="slide-up"

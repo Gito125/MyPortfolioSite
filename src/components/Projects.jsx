@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import { Pagination } from "swiper";
+import CustomTypewriter from "./miniComponents/CustomeTypeWriter";
 
 const Projects = () => {
   const { Projects } = content;
@@ -15,7 +16,13 @@ const Projects = () => {
       <div className="md:container px-5 pt-14 min-h-screen flex flex-col justify-between">
         <div>
           <h2 className="title" data-aos="fade-down">
-            {Projects.title}
+            <CustomTypewriter
+              words={[Projects.title]}
+              speed={500}
+              pause={1000}
+              loop
+              cursorChar='⚡'
+            />
           </h2>
           <h4 className="subtitle dark:text-dark_primary/80" data-aos="fade-down">
             {Projects.subtitle}

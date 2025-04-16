@@ -1,4 +1,5 @@
 import { content } from "../Content";
+import CustomTypewriter from "./miniComponents/CustomeTypeWriter";
 
 const Hireme = () => {
   const { Hireme } = content;
@@ -7,7 +8,13 @@ const Hireme = () => {
     <section className="bg-bg_light_primary dark:bg-[#b3b3b3]">
       <div className="md:container px-5 pt-14">
         <h2 className="title" data-aos="fade-down">
-          {Hireme.title}
+          <CustomTypewriter
+            words={[Hireme.title]}
+            speed={100}
+            pause={1000}
+            loop
+            cursorChar='⚡'
+          />
         </h2>
         <h4 className="subtitle dark:text-dark_primary/80" data-aos="fade-down">
           {Hireme.subtitle}
@@ -33,8 +40,16 @@ const Hireme = () => {
           >
             <p className="leading-7">{Hireme.para}</p>
             <br />
-            <a href="#contact" className="btn bg-dark_primary text-white">
-              {Hireme.btnText}
+            <a href="#contact">
+              <button className="btn animate-bounce bg-dark_primary text-white transition-all ease-in hover:bg-orange-500">
+                <CustomTypewriter 
+                  words={[Hireme.btnText]}
+                  speed={700}
+                  pause={1000}
+                  loop
+                  cursorChar='⚡'
+                />
+              </button>
             </a>
           </div>
         </div>

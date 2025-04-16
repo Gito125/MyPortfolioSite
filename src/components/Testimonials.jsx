@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper";
 import { useState } from "react";
+import CustomTypewriter from "./miniComponents/CustomeTypeWriter";
 
 const Testimonials = () => {
   const { Testimonials } = content;
@@ -16,7 +17,13 @@ const Testimonials = () => {
     <section>
       <div className="md:container px-5 pt-14">
         <h2 className="title dark:text-bg_light_primary" data-aos="fade-down">
-          {Testimonials.title}
+          <CustomTypewriter
+            words={[Testimonials.title]}
+            speed={100}
+            pause={1000}
+            loop
+            cursorChar='⚡'
+          />
         </h2>
         <h4 className="subtitle" data-aos="fade-down">
           {Testimonials.subtitle}

@@ -3,6 +3,7 @@ import { createElement, useState } from "react";
 import { content } from "../Content";
 // import modal package
 import Modal from "react-modal";
+import CustomTypewriter from "./miniComponents/CustomeTypeWriter";
 
 const customStyles = {
   content: {
@@ -40,24 +41,24 @@ const Skills = () => {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        style={customStyles}
+        // style={customStyles}
+        className="p-8 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-md w-[90%] border-2 border-dark_primary dark:border-bg_light_primary shadow-2xl rounded-lg rounded-br-3xl bg-bg_light_primary dark:bg-dark_primary"
       >
         <div className="flex items-center gap-2">
           <img className="h-10" src={selectSkill?.logo} alt={selectSkill?.name} />
-          <h6>{selectSkill?.name}</h6>
+          <h6 className="dark:text-bg_light_primary">{selectSkill?.name}</h6>
         </div>
         <br />
-        <ul className="list-decimal px-4 sm:text-sm text-xs !leading-7">
+        <ul className="list-decimal px-4 sm:text-sm text-xs !leading-7 dark:text-bg_light_primary">
           {selectSkill?.details.map((detail, i) => (
-            <li key={i} className="flex gap-2 items-center">
-              <span className="text-primary">{i + 1}.</span>
+            <li key={i} className="gap-2 items-center list-item">
               {detail}
             </li>
           ))}
         </ul>
         <br />
         <div className="flex justify-end">
-          <button onClick={closeModal} className="btn">
+          <button onClick={closeModal} className="btn dark:bg-bg_light_primary">
             Close
           </button>
         </div>
@@ -66,7 +67,13 @@ const Skills = () => {
       {/* content */}
       <div className="md:container px-5 py-14">
         <h2 className="title" data-aos="fade-down">
-          {skills.title}
+          <CustomTypewriter 
+              words={[skills.title]}
+              speed={100}
+              pause={1000}
+              loop
+              cursorChar='⚡'
+            />
         </h2>
         <h4 className="subtitle dark:text-dark_primary/80" data-aos="fade-down">
           {skills.subtitle}

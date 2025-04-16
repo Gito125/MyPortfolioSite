@@ -25,8 +25,8 @@ const Hero = () => {
           <h2 className="dark:text-bg_light_primary h-28  sm:absolute mt-10 sm:-top-20 sm:-left-16 p-1 transition-colors duration-500">
             <CustomTypewriter 
               words={[hero.title]}
-              speed={100}
-              pause
+              speed={300}
+              pause={1000}
               loop
               cursorChar='⚡'
               delayBeforeStart={2000}

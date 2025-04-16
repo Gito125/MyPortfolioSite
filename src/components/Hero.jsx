@@ -38,7 +38,7 @@ const Hero = () => {
               <button className="btn mr-1 animate-bounce shadow-lg hover:shadow-xl hover:bg-orange-500 hover:text-bg_light_primary dark:text-bg_light_primary dark:border-bg_light_primary">{hero.btnText}</button>
             </a>
           </div>
-          <div className="flex flex-col gap-10 mt-10">
+          <div className="flex flex-col gap-10 mt-10 relative -z-10">
             {hero.hero_content.map((content, i) => (
               <div
                 key={i}

@@ -18,6 +18,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import ThemeToggleButton from "./components/miniComponents/ThemeToggleButton";
 import useTypingTitle from "./components/customHook/useTypingTitle";
+import { useState } from "react";
 
 const App = () => {
   useEffect(() => {

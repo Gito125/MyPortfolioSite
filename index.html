@@ -6,8 +6,14 @@
     <link rel="canonical" href="https://iamgideon.vercel.app/" />
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/icon.svg" />
-    <meta name="description" content="Gideon is a passionate computer science student and future engineer, crafting powerful web apps and tech solutions. Explore his journey, skills, and projects." />
-    <meta name="keywords" content="Gideon, Portfolio, Software Developer, Computer Science, React, Django, Web Developer, Robotics, Engineering" />
+    <meta
+      name="description"
+      content="Gideon is a passionate computer science student and future engineer, crafting powerful web apps and tech solutions. Explore his journey, skills, and projects."
+    />
+    <meta
+      name="keywords"
+      content="Gideon, Portfolio, Software Developer, Computer Science, React, Django, Web Developer, Robotics, Engineering"
+    />
     <meta name="author" content="Gideon Prime" />
     <meta name="robots" content="index, follow" />
 
@@ -16,19 +22,250 @@
     <meta name="theme-color" content="#0F172A" />
 
     <!-- {/* Open Graph */} -->
-    <meta property="og:title" content="Gideon Prime | Full-Stack Developer & Future Engineer" />
-    <meta property="og:description" content="Explore the projects, skills, and tech stack of Gideon — a rising star in computer science and engineering." />
+    <meta
+      property="og:title"
+      content="Gideon Prime | Full-Stack Developer & Future Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Explore the projects, skills, and tech stack of Gideon — a rising star in computer science and engineering."
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://iamgideon.vercel.app/" />
-    <meta property="og:image" content="https://iamgideon.vercel.app/preview_image.jpeg" />
+    <meta
+      property="og:image"
+      content="https://iamgideon.vercel.app/preview_image.jpeg"
+    />
 
     <!-- {/* Twitter Cards */} -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Gideon Prime | Software Engineer & Builder" />
-    <meta name="twitter:description" content="Gideon is a bold, driven developer pushing boundaries in tech. Check out his latest work." />
-    <meta name="twitter:image" content="https://iamgideon.vercel.app/preview_image.jpeg" />
+    <meta
+      name="twitter:title"
+      content="Gideon Prime | Software Engineer & Builder"
+    />
+    <meta
+      name="twitter:description"
+      content="Gideon is a bold, driven developer pushing boundaries in tech. Check out his latest work."
+    />
+    <meta
+      name="twitter:image"
+      content="https://iamgideon.vercel.app/preview_image.jpeg"
+    />
+
+    <!-- ✅ Preloader styles -->
+    <style>
+      .loading-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #B6CCF5 ;
+        z-index: 9999;
+      }
+
+      #load {
+        position: absolute;
+        width: 600px;
+        height: 36px;
+        left: 50%;
+        top: 40%;
+        margin-left: -300px;
+        overflow: visible;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: default;
+        z-index: 1000;
+      }
+
+      #load h1 {
+        font-size: 36px;
+        font-weight: 900;
+        color: #f97316;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+
+      #load div {
+        position: absolute;
+        width: 20px;
+        height: 36px;
+        opacity: 0;
+        font-family: Helvetica, Arial, sans-serif;
+        animation: move 2s linear infinite;
+        -o-animation: move 2s linear infinite;
+        -moz-animation: move 2s linear infinite;
+        -webkit-animation: move 2s linear infinite;
+        transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        color: #f97316;
+      }
+
+      #load div:nth-child(2) {
+        animation-delay: 0.2s;
+        -o-animation-delay: 0.2s;
+        -moz-animation-delay: 0.2s;
+        -webkit-animation-delay: 0.2s;
+      }
+      #load div:nth-child(3) {
+        animation-delay: 0.4s;
+        -o-animation-delay: 0.4s;
+        -webkit-animation-delay: 0.4s;
+        -webkit-animation-delay: 0.4s;
+      }
+      #load div:nth-child(4) {
+        animation-delay: 0.6s;
+        -o-animation-delay: 0.6s;
+        -moz-animation-delay: 0.6s;
+        -webkit-animation-delay: 0.6s;
+      }
+      #load div:nth-child(5) {
+        animation-delay: 0.8s;
+        -o-animation-delay: 0.8s;
+        -moz-animation-delay: 0.8s;
+        -webkit-animation-delay: 0.8s;
+      }
+      #load div:nth-child(6) {
+        animation-delay: 1s;
+        -o-animation-delay: 1s;
+        -moz-animation-delay: 1s;
+        -webkit-animation-delay: 1s;
+      }
+      #load div:nth-child(7) {
+        animation-delay: 1.2s;
+        -o-animation-delay: 1.2s;
+        -moz-animation-delay: 1.2s;
+        -webkit-animation-delay: 1.2s;
+      }
+
+      @keyframes move {
+        0% {
+          left: 0;
+          opacity: 0;
+        }
+        35% {
+          left: 41%;
+          -moz-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+          opacity: 1;
+        }
+        65% {
+          left: 59%;
+          -moz-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          left: 100%;
+          -moz-transform: rotate(-180deg);
+          -webkit-transform: rotate(-180deg);
+          -o-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+          opacity: 0;
+        }
+      }
+
+      @-moz-keyframes move {
+        0% {
+          left: 0;
+          opacity: 0;
+        }
+        35% {
+          left: 41%;
+          -moz-transform: rotate(0deg);
+          transform: rotate(0deg);
+          opacity: 1;
+        }
+        65% {
+          left: 59%;
+          -moz-transform: rotate(0deg);
+          transform: rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          left: 100%;
+          -moz-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+          opacity: 0;
+        }
+      }
+
+      @-webkit-keyframes move {
+        0% {
+          left: 0;
+          opacity: 0;
+        }
+        35% {
+          left: 41%;
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+          opacity: 1;
+        }
+        65% {
+          left: 59%;
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          left: 100%;
+          -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+          opacity: 0;
+        }
+      }
+
+      @-o-keyframes move {
+        0% {
+          left: 0;
+          opacity: 0;
+        }
+        35% {
+          left: 41%;
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+          opacity: 1;
+        }
+        65% {
+          left: 59%;
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          left: 100%;
+          -o-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+          opacity: 0;
+        }
+      }
+    </style>
   </head>
   <body class="dark:bg-dark_primary transition-colors duration-500">
+    <!-- ✅ This is the instant-loading preloader -->
+    <div id="preloader" class="loading-container dark:bg-dark_primary">
+      <div id="load">
+        <div><h1> G </h1></div>
+        <div><h1> N </h1></div>
+        <div><h1> I </h1></div>
+        <div><h1> D </h1></div>
+        <div><h1> A </h1></div>
+        <div><h1> O </h1></div>
+        <div><h1> L </h1></div>
+      </div>
+    </div>
+
+    <!-- ✅ This is the main app container -->
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

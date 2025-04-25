@@ -22,7 +22,7 @@ const Hero = () => {
 
         {/* first col */}
         <div className="pb-16 px-6 pt-5 relative" data-aos="fade-down">
-          <h2 className="dark:text-bg_light_primary h-28  sm:absolute mt-10 sm:-top-20 sm:-left-16 p-1 transition-colors duration-500">
+          <h2 className="dark:text-bg_light_primary h-28  sm:absolute mt-10 sm:-top-24 sm:-left-32 p-1 transition-colors duration-500">
             <CustomTypewriter 
               words={[hero.title]}
               speed={300}

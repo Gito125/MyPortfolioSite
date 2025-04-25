@@ -62,7 +62,8 @@ export const content = {
     },
   ],
   hero: {
-    title: "Web Developer",
+    title: "Software Engineer",
+    subtitle: "I am a Software Engineer with a passion for creating innovative solutions that make a difference.",
     firstName: "OGWANG",
     LastName: "GIFT GIDEON",
     btnText: "Contact Me",

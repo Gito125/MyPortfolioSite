@@ -1,19 +1,57 @@
-# Gideon Prime Portfolio
+# Gideon Prime — Portfolio
+
 ![Portfolio Preview](./public/preview_image.jpeg)
 
-### Vite + React + tailwind
+A modern developer portfolio built with **Vite**, **React**, and **Tailwind CSS**.
+Fast, lightweight, animated, and optimized for smooth interaction.
 
-```bash 
+---
+
+## 🚀 Getting Started
+
+Install dependencies:
+
+```bash
 pnpm i
+```
+
+Run the development server:
+
+```bash
 pnpm dev
 ```
-## packages:
-+ [tailwind css](https://tailwindcss.com/docs/installation)
-+ [vite js](https://vitejs.dev/guide/)
-+ [swiper js](https://swiperjs.com/get-started)
-+ [email js](https://www.emailjs.com/docs/)
-+ [Aos (animation)](https://michalsnik.github.io/aos/)
-+ [react modal](https://www.npmjs.com/package/react-modal)
-+ [react-hot-toast](https://react-hot-toast.com/docs)
-+ [react icons](https://react-icons.github.io/react-icons/)
-+ [react helmet](https://www.npmjs.com/package/react-helmet)
+
+---
+
+## 📦 Tech Stack & Packages
+
+### Core
+
+* **Tailwind CSS** — Utility-first styling
+  [https://tailwindcss.com/docs/installation](https://tailwindcss.com/docs/installation)
+* **Vite** — Fast build tool
+  [https://vitejs.dev/guide/](https://vitejs.dev/guide/)
+
+### UI / UX Enhancements
+
+* **Swiper.js** — Sliders & carousels
+  [https://swiperjs.com/get-started](https://swiperjs.com/get-started)
+* **AOS (Animate On Scroll)** — Scroll animations
+  [https://michalsnik.github.io/aos/](https://michalsnik.github.io/aos/)
+* **React Modal** — Accessible modal components
+  [https://www.npmjs.com/package/react-modal](https://www.npmjs.com/package/react-modal)
+* **React Icons** — Icon library
+  [https://react-icons.github.io/react-icons/](https://react-icons.github.io/react-icons/)
+
+### Utilities
+
+* **EmailJS** — Email sending from client-side
+  [https://www.emailjs.com/docs/](https://www.emailjs.com/docs/)
+* **react-hot-toast** — Toast notifications
+  [https://react-hot-toast.com/docs](https://react-hot-toast.com/docs)
+* **react-helmet** — Manage document head
+  [https://www.npmjs.com/package/react-helmet](https://www.npmjs.com/package/react-helmet)
+
+---
+
+Feel free to plug in additional sections like deployment, environment variables, or contribution guidelines whenever you’re ready.

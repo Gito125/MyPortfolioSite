@@ -7,7 +7,7 @@ Fast, lightweight, animated, and optimized for smooth interaction.
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 Install dependencies:
 
@@ -23,7 +23,7 @@ pnpm dev
 
 ---
 
-## 📦 Tech Stack & Packages
+## Tech Stack & Packages
 
 ### Core
 

@@ -5,6 +5,8 @@
 A modern developer portfolio built with **Vite**, **React**, and **Tailwind CSS**.
 Fast, lightweight, animated, and optimized for smooth interaction.
 
+![Visit my site](https://iamgideon.vercel.app/)
+
 ---
 
 ## Getting Started
